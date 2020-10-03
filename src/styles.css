@@ -1,0 +1,226 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+.main_div {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(14, 83, 83);
+}
+
+.center_div {
+  width: 25%;
+  height: 80vh;
+  background-color: #f4f4f4;
+  border-radius: 15px;
+  box-shadow: 5px 5px 25px -5px rgba(0, 0, 0, 0.5);
+}
+.center_div:hover {
+  box-shadow: 0px 30px 18px -8px rgb(0, 0, 0, 0.1);
+  transform: scale(1.02, 1.02);
+}
+h1 {
+  color: white;
+  background: transparent;
+  background-color: #8566aa;
+  padding: 6px 0 2px 0;
+  margin-bottom: 10px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+input {
+  text-align: center;
+  height: 30px;
+  top: 10px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 500;
+  width: 60%;
+  border-bottom: 2px solid #8566aa;
+  outline: none;
+}
+button {
+  min-height: 40px;
+  width: 44px;
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: #8566aa;
+  color: #fff;
+  font-size: 40px;
+  border: none;
+  outline: none;
+  margin-left: 10px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+button:hover {
+  background-color: #20bf6b;
+  transform: scale(1.05, 1.05);
+}
+ol {
+  margin-top: 30px;
+}
+
+ol li {
+  padding-left: 0px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  color: #8566aa;
+  text-transform: capitalize;
+  font-family: "Bree Serif", serif;
+}
+
+.todo_style {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
+.todo_style .fa-times {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #8566aa;
+  border-radius: 50%;
+  margin: 0 15px 0 35px;
+  color: aliceblue;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+.todo_style .fa-times:hover {
+  background-color: crimson;
+}
+.todo_style .fa-times:hover .list_style {
+  color: crimson;
+}
+
+@media (max-width: 768px) {
+  .center_div {
+    width: 50px;
+  }
+  .todo_style .fa-times {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 15px 0 15px;
+  }
+  button {
+    min-height: 40px;
+    width: 40px;
+    color: #fff;
+    font-size: 30px;
+    margin-left: 5px;
+  }
+}
+/* .main_div {
+  width: auto;
+} */
+/* div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Bree Serif", serif;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(14, 83, 83);
+} */
+/* 
+.heading_style {
+  padding: 30px 0;
+  text-align: center;
+  font-family: "Bree Serif", serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: brown;
+  background-color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.cards {
+  width: 100%;
+  height: auto;
+}
+
+.card {
+  margin: 6%;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+  background-color: #fff;
+  width: 21.25%;
+
+  border-radius: 12px;
+  box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
+  float: left;
+}
+
+.card:hover {
+  box-shadow: 0px 30px 18px -8px rgb(0, 0, 0, 0.1);
+  transform: scale(1.05, 1.05);
+}
+
+.card_img {
+  width: 100%;
+  height: 235px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.card_info {
+  background-attachment: #fff;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  padding: 16px 24px 14px 14px;
+  background-color: #fff;
+}
+
+.card_cate {
+  font-family: "Bree Serif", serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: #868686;
+  background-color: #fff;
+}
+
+.card_title {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-family: "Bree Serif", serif;
+  background-color: #fff;
+  text-transform: capitalize;
+}
+
+button {
+  padding: 5px 8px;
+  font-family: "Bree Serif", serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: #868686;
+  background-color: #fff;
+  outline: none;
+  border: 1px solid black;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  box-shadow: 0px 30px 18px -8px rgb(0, 0, 0, 0.1);
+  transform: scale(1.05, 1.05);
+}  */
